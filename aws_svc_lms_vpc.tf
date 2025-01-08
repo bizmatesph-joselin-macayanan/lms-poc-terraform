@@ -9,4 +9,15 @@ module "vpc_lms" {
   project_name                = local.lms.env_name
   vpc_name_suffix             = "-vpc"
   enable_termination          = var.ENABLE_TERMINATION
+
+  // Subnet
+  enable_public_subnet   = true
+  enable_private_subnet  = true
+  enable_internal_subnet = false
+
+  // Bastion
+  is_bastion_enabled = false
+
+  // Route53
+  is_nat_ip_record_enabled = false
 }
