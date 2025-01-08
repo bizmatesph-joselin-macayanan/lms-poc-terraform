@@ -16,7 +16,7 @@ variable "COGNITO_OIDC_626997519223" { // This value is set securely in the scri
 
 ## Base setting
 locals { project_name = "LMS" }
-locals {env = "staging" }
+locals { env = "staging" }
 locals { env_workload_type = "staging" }
 locals { env_prefix = "staging-" }
 locals { env_project_name = "${lower(local.env_prefix)}${lower(local.project_name)}" }

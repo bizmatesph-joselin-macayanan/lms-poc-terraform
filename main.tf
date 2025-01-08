@@ -27,3 +27,8 @@ variable "READONLY_MODE" { // Switch readonly role or administrator role.
   type    = bool
   default = true // Default is "true" Turns off in the Terraform cloud environment variable when deploy.
 }
+
+variable "ENABLE_TERMINATION" {
+  type    = bool
+  default = true
+}
